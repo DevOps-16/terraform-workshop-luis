@@ -1,7 +1,7 @@
 resource "aws_instance" "example" {
-  count         = 4
+  count         = 1
   ami           = "ami-2757f631"
-  instance_type = "m5.4xlarge"
+  instance_type = "t2.micro"
 
   tags = {
     Name  = "tf-demo-ec2"
